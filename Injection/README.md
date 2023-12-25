@@ -1,5 +1,11 @@
 # Overview
 
+### Root Cause
+
+- Using string concatenation to generate a SQL statement
+- Parser does not distinguish which part of the statement is code and which part is data
+
+
 ### Mitigation
 
 1. HTML Encode all user input
