@@ -8,3 +8,7 @@
     - Node.textContent
     - document.createTextNode
     - Element.setAttribute (second parameter only)
+
+```text
+HTML tags (such as <img src…>, <iframe…>, <bgsound src…> etc.) can be used to transmit malicious JavaScript.
+```
