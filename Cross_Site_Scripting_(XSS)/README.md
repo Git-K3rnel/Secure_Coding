@@ -33,3 +33,10 @@ HTML Encoding:
 ```html
 & --> &amp; < --> &lt; > --> &gt; “ --> &quot; ‘ --> &#x27;
 ```
+
+### JavaScript Parameters
+
+- Untrusted data, if being placed inside a JavaScript function/code requires validation
+- Do not use these functions they are vulnerable even if javascript escaped! :
+    - setInterval()
+    - eval()
