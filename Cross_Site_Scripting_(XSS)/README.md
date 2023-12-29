@@ -23,9 +23,13 @@ HTML tags (such as <img src…>, <iframe…>, <bgsound src…> etc.) can be used
 
 Example:
 
-```jsx
+```html
 HTML Body Context <span>UNTRUSTED DATA</span> OR <body>...UNTRUSTED DATA </body> OR 
 <div>UNTRUSTED DATA </div>
 ```
 
 HTML Encoding:
+
+```html
+& --> &amp; < --> &lt; > --> &gt; “ --> &quot; ‘ --> &#x27;
+```
