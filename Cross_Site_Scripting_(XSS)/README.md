@@ -12,3 +12,7 @@
 ```text
 HTML tags (such as <img src…>, <iframe…>, <bgsound src…> etc.) can be used to transmit malicious JavaScript.
 ```
+
+### Attribute Encoding
+
+- Escape all characters with ASCII values less than 256 with the &#xHH; format (or a named entity if available) to prevent switching out of the attribute
