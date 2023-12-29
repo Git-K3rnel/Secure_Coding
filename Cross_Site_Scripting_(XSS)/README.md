@@ -20,3 +20,12 @@ HTML tags (such as <img src…>, <iframe…>, <bgsound src…> etc.) can be used
 ### HTML Entity
 
 - HTML elements which contain user controlled data or data from untrusted sourced should be reviewed for contextual output encoding
+
+Example:
+
+```jsx
+HTML Body Context <span>UNTRUSTED DATA</span> OR <body>...UNTRUSTED DATA </body> OR 
+<div>UNTRUSTED DATA </div>
+```
+
+HTML Encoding:
