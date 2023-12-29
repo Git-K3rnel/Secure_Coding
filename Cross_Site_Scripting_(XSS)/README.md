@@ -16,3 +16,7 @@ HTML tags (such as <img src…>, <iframe…>, <bgsound src…> etc.) can be used
 ### Attribute Encoding
 
 - Escape all characters with ASCII values less than 256 with the &#xHH; format (or a named entity if available) to prevent switching out of the attribute
+
+### HTML Entity
+
+- HTML elements which contain user controlled data or data from untrusted sourced should be reviewed for contextual output encoding
