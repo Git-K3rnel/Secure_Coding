@@ -23,3 +23,20 @@ ResultSet results = pstmt.executeQuery();
     - user input is used to access a database row
     - accessing a file
     - application page, . . .
+ 
+
+  ### Over-Posting (Mass assignments)
+  Depending on the models you create, there might be sensitive data that you would not like to be modified. The vulnerability is exploited when a malicious user modifys a model’s fields, which are not exposed to the user via the view, and the malicious user to change hidden model values adds additional model parameters
+
+**Sample Code2**
+
+```java
+public class user
+{
+public int ID { get; set; } <- exposed via view
+public string Name { get; set; } <- exposed via view
+public bool isAdmin{ get; set; } <-hidden from view
+}
+```
+
+Corresponding view (HTML) :
