@@ -40,3 +40,9 @@ public bool isAdmin{ get; set; } <-hidden from view
 ```
 
 Corresponding view (HTML) :
+
+```html
+D: <%= Html.TextBox(“ID”) %> <br>
+Name: <%= Html.TextBox(“Name”) %> <br>
+<-- no isAdmin here!
+```
