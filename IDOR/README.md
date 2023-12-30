@@ -16,3 +16,10 @@ ResultSet results = pstmt.executeQuery();
 ```text
 💡 The attacker simply modifies the ‘acct’ parameter in their browser to send whatever account number they want. If the application does not perform user verification, the attacker can access any user’s account, instead of only the intended customer’s account.
 ```
+
+**What to Review**
+
+- map out all locations in the code being reviewed where user input is used to reference objects directly
+    - user input is used to access a database row
+    - accessing a file
+    - application page, . . .
