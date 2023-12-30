@@ -46,3 +46,9 @@ D: <%= Html.TextBox(“ID”) %> <br>
 Name: <%= Html.TextBox(“Name”) %> <br>
 <-- no isAdmin here!
 ```
+
+**Recommendation:**
+
+- Use a model which does not have values the user should not edit.
+- Use the bind method and whitelist attributes which can be updated.
+- Use the controller.UpdateModel method to exclude certain attribute updates.
